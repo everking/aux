@@ -4,18 +4,6 @@
 
 # About
 
-This is an example of how you can have _markdown_ in page content!
+![Saints](/images/saints.png)
 
-- How
-- **Cool**
-- Is _that_!?
-
-If you like, you can also import markdown into any Svelte page.
-
-Anyway, you can find this file here:
-
-```
-src/routes/about/+page.md
-```
-
-Here's the [home link](/) if you wanna go back.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies faucibus ultrices. Phasellus ultricies erat tortor, sit amet dictum turpis finibus eget. Sed laoreet risus sed bibendum pharetra. Sed nec luctus enim. Cras maximus elit vitae arcu blandit, eget condimentum massa posuere. Maecenas vel convallis ex, quis gravida ex. In eu ante ut neque sollicitudin consectetur. Integer vehicula ante at nulla congue dapibus. Etiam at nisl ut lorem dapibus congue.

@@ -15,11 +15,11 @@
 		Skip to main content
 	</a>
 	
-	<a href="/" class="site-title">
-		{siteTitle}
-	</a>
-	
+	<img alt="Auxilium" src="/images/auxilium.png" style="width:500px" />
+	<br/>
+	<div>
 	<HamburgerMenuButton />
 	<MainNav />
+	</div>
 
 </header>
