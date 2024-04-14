@@ -1,7 +1,7 @@
 header,
 footer {
 	font-family: var(--primaryFont);
-	padding: 2.5rem 2rem;
+	padding: .5rem 2rem;
 }
 
 :where(header, footer) a {
@@ -176,7 +176,6 @@ header {
 	header .main-nav ul {
 		margin: 1rem auto 0;
 		padding-top: 0.5rem;
-		border-top: 1px solid var(--dark);
 		width: max-content;
 	}
 

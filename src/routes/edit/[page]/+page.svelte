@@ -53,7 +53,7 @@
 	<title>Edit file</title>
 </svelte:head>
 <h3>Edit "{page}"</h3>
-<a href="/blog/{page}" target="aux_view">View Page</a> | <a href="https://www.markdownguide.org/cheat-sheet/" target="markdown_view">Markdown Cheat Sheet</a>
+<a href="/article/{page}" target="aux_view">View Page</a> | <a href="https://www.markdownguide.org/cheat-sheet/" target="markdown_view">Markdown Cheat Sheet</a>
 <textarea id="content" bind:value={content}></textarea>
 <button class="editButton" on:click={() => updateFile()}>
 	Save

@@ -5,9 +5,9 @@ import fetchPosts from '$lib/assets/js/fetchPosts'
 export const load = async ({ fetch, params }) => {
   const page = parseInt(params.page) || 1
 
-  // Keeps from duplicationg the blog index route as page 1
+  // Keeps from duplicationg the article index route as page 1
   if (page <= 1) {
-    redirect(301, '/blog');
+    redirect(301, '/article');
   }
   
   let offset = (page * postsPerPage) - postsPerPage

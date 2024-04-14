@@ -1,5 +1,5 @@
 {
-	"name": "auxilium-blog",
+	"name": "auxilium-guide",
 	"version": "2.0.2",
 	"scripts": {
 		"dev": "vite dev",

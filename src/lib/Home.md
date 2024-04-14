@@ -16,12 +16,12 @@ The objective is to help families grow in self-mastery and self-giving.  We hope
 ## Family
 
 ### Whole Child
-- [Academic](/blog/family-academic)
-- [Reading](/blog/family-reading)
-- [Spiritual](/blog/family-spiritual)
+- [Academic](/article/family-academic)
+- [Reading](/article/family-reading)
+- [Spiritual](/article/family-spiritual)
 
 ### Faith
-- [Bible](/blob/family-bible)
+- [Bible](/article/family-bible)
 - Prayers
 - Centers
 - Readings
