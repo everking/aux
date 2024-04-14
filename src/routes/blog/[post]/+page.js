@@ -1,4 +1,4 @@
-import { error } from '@sveltejs/kit'
+import { error, redirect } from '@sveltejs/kit'
 
 export const load = async ({ params }) => {
 	try {	
@@ -9,6 +9,9 @@ export const load = async ({ params }) => {
 			meta: { ...post.metadata, slug: params.post } 
 		}
 	} catch(err) {
-		error(404, err);
+		console.log(`Post not found: ${params.post}.`);
+		const newPost = `/edit/${params.post}`;
+		redirect(302, newPost);
+//		error(404, err);
 	}
 }
