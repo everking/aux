@@ -9,6 +9,8 @@
 </script>
 
 <header>
-	<img alt="Auxilium" src="/images/auxilium.png" style="width:300px" />
-	<MainNav />
+	<div>
+		<img alt="Auxilium" src="/images/auxilium-new.png" style="width:350px" />
+		<MainNav />
+	</div>
 </header>

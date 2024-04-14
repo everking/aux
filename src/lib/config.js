@@ -18,16 +18,22 @@ export const postsPerPage = 10
 export const navItems = [
 	{
 		title: 'Home',
-		route: '/'
+		route: '/home'
 	},
 	{
-		title: 'Article',
-		route: '/article'
+		title: 'Family',
+		route: '/family'
 	}, {
-			title: 'About',
-		route: '/about'
+			title: 'School',
+		route: '/school'
 	}, {
-		title: 'Contact',
-		route: '/contact' 
+		title: 'Excellence',
+		route: '/excellence' 
+	}, {
+		title: 'Others',
+		route: '/others' 
+	}, {
+		title: 'About',
+		route: '/about' 
 	},
 ]
