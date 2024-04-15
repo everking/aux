@@ -29,13 +29,17 @@
 	}
 	
 	.mega .dropbtn {
-	  font-size: 16px;  
+	  font-size: 16px; 
 	  border: none;
 	  outline: none;
 	  color: black;
 	  padding: 14px 16px;
 	  background-color: inherit;
-	  font: inherit;
+	  font-style: inherit;
+	  font-size: inherit;
+	  line-height: inherit;
+	  font-family: inherit;
+	  font-weight: bold;
 	  margin: 0;
 	}
 	
@@ -92,7 +96,6 @@
 	}
 
 	.dropdown .dropbtn {
-	font-size: 16px;  
 	border: none;
 	outline: none;
 	color: black;
@@ -160,7 +163,6 @@
 		</div> 
 		<div class="mega">
 			<button class="dropbtn">Family 
-			  <i class="fa fa-caret-down"></i>
 			</button>
 			<div class="mega-content">
 			  <div class="header">
