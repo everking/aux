@@ -5,6 +5,7 @@ import { sveltekit } from '@sveltejs/kit/vite'
 const config = {
 	plugins: [sveltekit()],
 	server: {
+		host: '0.0.0.0',
 		fs: {
 			allow: ['.']
 		},
