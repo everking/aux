@@ -3,7 +3,7 @@ import fs from 'fs';
 
 export const prerender = false;
 
-const BASE_PATH = "/Users/edeguzma/personal-dev/aux/src/lib/posts";
+const BASE_PATH = "/app/src/lib/posts";
 const STARTER_HEADER = `---
 title: "Sample title - change me"
 date: "2023-10-26"
