@@ -1,4 +1,4 @@
 set -e
 docker build . -t aux
-docker tag aux everking/aux
-docker push everking/aux
+docker tag aux ghcr.io/everking/aux
+docker push ghcr.io/everking/aux
