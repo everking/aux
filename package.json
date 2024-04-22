@@ -12,6 +12,8 @@
 		"@sveltejs/adapter-static": "^3.0.0",
 		"@sveltejs/kit": "^2.5.5",
 		"@sveltejs/vite-plugin-svelte": "^3.1.0",
+		"@tiptap/core": "^2.3.0",
+		"@tiptap/starter-kit": "^2.3.0",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
@@ -20,6 +22,7 @@
 		"prettier-plugin-svelte": "^3.1.2",
 		"rehype-autolink-headings": "^6.1.1",
 		"rehype-slug": "^5.1.0",
+		"sass": "^1.75.0",
 		"svelte": "^4.2.7",
 		"svelte-preprocess": "^5.0.3",
 		"vite": "^5.2.8"

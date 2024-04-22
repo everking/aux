@@ -170,38 +170,40 @@
 			  <div class="row">
 				<div class="column">
 				  <h6>Whole Child</h6>
-				  <a href="#">Academic</a>
-				  <a href="#">Spiritual</a>
-				  <a href="#">Sports</a>
-				  <a href="#">Culture</a>
-				  <a href="#">Faith & Reason</a>
+				  <a href="/article/academic">Academic</a>
+				  <a href="/article/spiritual">Spiritual</a>
+				  <a href="/article/sports">Sports</a>
+				  <a href="/article/culture">Culture</a>
+				  <a href="/article/faith-reason">Faith & Reason</a>
 				</div>
 				<div class="column">
 				  <h6>Spiritual</h6>
-				  <a href="#">Bible</a>
-				  <a href="#">Prayers</a>
-				  <a href="#">Formation</a>
-				  <a href="#">Readings</a>
-				  <a href="#">Catechism</a>
-				  <a href="#">Mentoring</a>
+				  <a href="/article/spiritual">Spiritual</a>
+				  <a href="/article/biblical">Biblical</a>
+				  <a href="/article/prayers">Prayers</a>
+				  <a href="/article/formation">Formation</a>
+				  <a href="/article/readings">Readings</a>
+				  <a href="/article/ccc">Catechism</a>
+				  <a href="/article/mentoring">Mentoring</a>
 				</div>
 				<div class="column">
 				  <h6>Virtues</h6>
-				  <a href="#">Stories</a>
-					<a href="#">Life of Saints</a>
-					<a href="#">Corporal works of mercy</a>
-					<a href="#">Mentoring</a>
-					<a href="#">Service Projects</a>
-					<a href="#">Spiritual works of mercy</a>
+				  <a href="/article/stories">Stories</a>
+				  <a href="/article/virtues">Virtues</a>
+				  <a href="/article/life-of-saints">Life of Saints</a>
+					<a href="/article/coming-soon">Corporal works of mercy</a>
+					<a href="/article/coming-soon">Mentoring</a>
+					<a href="/article/coming-soon">Service Projects</a>
+					<a href="/article/coming-soon">Spiritual works of mercy</a>
 				</div>
 				<div class="column">
 					<h6>Activities</h6>
-					<a href="#">Stories</a>
-					  <a href="#">Chat</a>
-					  <a href="#">Field Outing</a>
-					  <a href="#">Bible Study</a>
-					  <a href="#">Recollection</a>
-					  <a href="#">Study weekend</a>
+					<a href="/article/coming-soon">Stories</a>
+					  <a href="/article/coming-soon">Chat</a>
+					  <a href="/article/coming-soon">Field Outing</a>
+					  <a href="/article/coming-soon">Bible Study</a>
+					  <a href="/article/coming-soon">Recollection</a>
+					  <a href="/article/coming-soon">Study weekend</a>
 				  </div>
 				</div>
 			</div>
@@ -213,13 +215,13 @@
 			<div class="dropdown-content">
 				<div class="header">
 				</div>   
-				<a href="#">Reading lists</a>
-				<a href="#">Friendship clubs</a>
-				<a href="#">Movie club</a>
-				<a href="#">Sports Group</a>
-				<a href="#">Game Reviews</a>
-				<a href="#">Mentoring</a>
-				<a href="#">Counseling</a>
+				<a href="/article/coming-soon">Reading lists</a>
+				<a href="/article/coming-soon">Friendship clubs</a>
+				<a href="/article/coming-soon">Movie club</a>
+				<a href="/article/coming-soon">Sports Group</a>
+				<a href="/article/coming-soon">Game Reviews</a>
+				<a href="/article/coming-soon">Mentoring</a>
+				<a href="/article/coming-soon">Counseling</a>
 			</div>
 		</div> 
 		<div class="dropdown">
@@ -228,11 +230,11 @@
 			<div class="dropdown-content">
 				<div class="header">
 				</div>   
-				<a href="#">Pointers</a>
-				<a href="#">Coaching</a>
-				<a href="#">Health</a>
-				<a href="#">Counseling</a>
-				<a href="#">Bible Study</a>
+				<a href="/article/coming-soon">Pointers</a>
+				<a href="/article/coming-soon">Coaching</a>
+				<a href="/article/coming-soon">Health</a>
+				<a href="/article/coming-soon">Counseling</a>
+				<a href="/article/coming-soon">Bible Study</a>
 			</div>
 		</div> 
 		<div class="dropdown">
@@ -242,8 +244,8 @@
 				<div class="header">
 				</div>   
 				<a href="/about">About</a>
-				<a href="#">Ask any questions</a>
-				<a href="#">Connect Familes</a>
+				<a href="/article/coming-soon">Ask any questions</a>
+				<a href="/article/coming-soon">Connect Familes</a>
 				<a href="/contact">Moderators</a>
 			</div>
 		</div> 

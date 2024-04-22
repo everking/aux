@@ -3,7 +3,8 @@ import fs from 'fs';
 
 export const prerender = false;
 
-const BASE_PATH = "/app/src/lib/posts";
+const POSTS_BASE_PATH = process.env.POSTS_BASE_PATH ? process.env.POSTS_BASE_PATH : "/app/src/lib/posts";
+
 const STARTER_HEADER = `---
 title: "Sample title - change me"
 date: "2023-10-26"
@@ -23,7 +24,7 @@ ullamcorper velit sed ullamcorper morbi tincidunt.
 `;
 export const GET = async ({  params }) => {
   const { page } = params;
-  const filePath = `${BASE_PATH}/${page}.md`;
+  const filePath = `${POSTS_BASE_PATH}/${page}.md`;
   console.log(`GET ${filePath}`);
   if (fs.existsSync(filePath)) {
     const data = fs.readFileSync(filePath, 'utf8');
@@ -42,7 +43,7 @@ export const POST = async ({ params, request }) => {
   console.log(`POST ${JSON.stringify(params, null, 2)} ==> request ${JSON.stringify(request.json, null, 2)}`);
   const content = await request.json();
   console.log(`request.json: ${JSON.stringify(content.content, null, 2)}`);
-  saveFile(`${BASE_PATH}/${page}.md`, content.content);
+  saveFile(`${POSTS_BASE_PATH}/${page}.md`, content.content);
   return json({}) 
 }
 
