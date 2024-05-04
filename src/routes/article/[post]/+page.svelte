@@ -4,6 +4,10 @@
 
 	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
 		data.meta;
+
+	const show = title !== undefined;
+
+	console.log(show);
 	const { PostContent } = data;
 </script>
 
@@ -33,7 +37,9 @@
 		height={coverHeight}
 	/>
 
-	<h1>{title}</h1>
+	{#if show}
+	<h1 class:show>{title}</h1>
+	{/if}
 
 	<div class="meta">
 		<b>Published:</b>

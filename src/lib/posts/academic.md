@@ -1,5 +1,5 @@
 ---
-title: "Academic"
+#title: "Academic"
 date: "2023-10-26"
 updated: "2023-10-26"
 categories:
@@ -7,10 +7,8 @@ categories:
   - "family"
   - "academic"
 
-coverImage: "/images/zacchaeus.png"
+coverImage: "/images/academic.png"
 coverWidth: 16
-coverHeight: 6
-excerpt: "Academic"
 ---
 
 ### The Importance of Being a Good Student, According To St. Josemaria

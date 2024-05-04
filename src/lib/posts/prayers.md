@@ -14,3 +14,6 @@ excerpt: "Prayers"
 * https://stjosemaria.org/podcasts/at-the-school-of-prayer/
 
 When Josemaría was very little, his parents and grandparents taught him short, simple prayers to say during the day.  Saint Josemaria never forgot them. He went on saying them for the rest of his life.
+
+<a target="pdf-view" href="/pdf/escriva-chlidren-prayers.pdf"><img src="/images/pdf.png" style="height:40px;width:35px" /></a>
+

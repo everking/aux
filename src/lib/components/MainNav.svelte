@@ -178,7 +178,6 @@
 				</div>
 				<div class="column">
 				  <h6>Spiritual</h6>
-				  <a href="/article/spiritual">Spiritual</a>
 				  <a href="/article/biblical">Biblical</a>
 				  <a href="/article/prayers">Prayers</a>
 				  <a href="/article/formation">Formation</a>
@@ -188,22 +187,21 @@
 				</div>
 				<div class="column">
 				  <h6>Virtues</h6>
+				  <a href="/article/virtues">What are Virtues?</a>
 				  <a href="/article/stories">Stories</a>
-				  <a href="/article/virtues">Virtues</a>
 				  <a href="/article/life-of-saints">Life of Saints</a>
-					<a href="/article/coming-soon">Corporal works of mercy</a>
-					<a href="/article/coming-soon">Mentoring</a>
-					<a href="/article/coming-soon">Service Projects</a>
-					<a href="/article/coming-soon">Spiritual works of mercy</a>
+			 	<a href="/article/corporal-works-of-mercy">Corporal works of mercy</a>
+				<a href="/article/mentoring">Mentoring</a>
+				<a href="/article/service-projects">Service Projects</a>
+				<a href="/article/spiritual-works-of-mercy">Spiritual works of mercy</a>
 				</div>
 				<div class="column">
 					<h6>Activities</h6>
-					<a href="/article/coming-soon">Stories</a>
-					  <a href="/article/coming-soon">Chat</a>
-					  <a href="/article/coming-soon">Field Outing</a>
-					  <a href="/article/coming-soon">Bible Study</a>
-					  <a href="/article/coming-soon">Recollection</a>
-					  <a href="/article/coming-soon">Study weekend</a>
+					  <a href="/article/chat">Chat</a>
+					  <a href="/article/field-outing">Field Outing</a>
+					  <a href="/article/bible-study">Bible Study</a>
+					  <a href="/article/recollections">Recollections</a>
+					  <a href="/article/study-weekend">Study weekend</a>
 				  </div>
 				</div>
 			</div>
@@ -215,37 +213,37 @@
 			<div class="dropdown-content">
 				<div class="header">
 				</div>   
-				<a href="/article/coming-soon">Reading lists</a>
-				<a href="/article/coming-soon">Friendship clubs</a>
-				<a href="/article/coming-soon">Movie club</a>
-				<a href="/article/coming-soon">Sports Group</a>
-				<a href="/article/coming-soon">Game Reviews</a>
-				<a href="/article/coming-soon">Mentoring</a>
-				<a href="/article/coming-soon">Counseling</a>
+				<a href="/article/reading-list">Reading lists</a>
+				<a href="/article/fiendship-clubs">Friendship clubs</a>
+				<a href="/article/movie-club">Movie club</a>
+				<a href="/article/sports-group">Sports Group</a>
+				<a href="/article/game-reviews">Game Reviews</a>
+				<a href="/article/mentoring">Mentoring</a>
+				<a href="/article/counseling">Counseling</a>
 			</div>
 		</div> 
 		<div class="dropdown">
-			<button class="dropbtn">Striving for Excellence
+		  <button class="dropbtn">Striving for Excellence
 			</button>
 			<div class="dropdown-content">
 				<div class="header">
 				</div>   
-				<a href="/article/coming-soon">Pointers</a>
-				<a href="/article/coming-soon">Coaching</a>
-				<a href="/article/coming-soon">Health</a>
-				<a href="/article/coming-soon">Counseling</a>
-				<a href="/article/coming-soon">Bible Study</a>
+				<a href="/article/pointers">Pointers</a>
+				<a href="/article/coaching">Coaching</a>
+				<a href="/article/health">Health</a>
+				<a href="/article/counseling">Counseling</a>
+				<a href="/article/bible-study">Bible Study</a>
 			</div>
 		</div> 
-		<div class="dropdown">
+		<div class="dropdown"> 
 			<button class="dropbtn">Help
 			</button>
 			<div class="dropdown-content">
 				<div class="header">
 				</div>   
 				<a href="/about">About</a>
-				<a href="/article/coming-soon">Ask any questions</a>
-				<a href="/article/coming-soon">Connect Familes</a>
+				<a href="/article/ask-any-question">Ask any questions</a>
+				<a href="/article/connect-families">Connect Familes</a>
 				<a href="/contact">Moderators</a>
 			</div>
 		</div> 

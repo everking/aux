@@ -11,5 +11,5 @@ coverHeight: 6
 excerpt: "This is an excerpt"
 ---
 ### A daily podcast bringing the Saints to life with award-winning actors, writers, and sound designers.
-* https://www.themerrybeggars.com/shows/the-saints
+* <a href="https://www.themerrybeggars.com/shows/the-saints" target="_blank">https://www.themerrybeggars.com/shows/the-saints</a>
 

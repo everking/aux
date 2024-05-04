@@ -13,6 +13,8 @@ excerpt: "Readings"
 ### Spark the Imagination Book List
 * File: Spark the Imagination Book List for kids
 
+<a target="pdf-view" href="/pdf/spark-the-Imagination-book-list-for-kids.pdf"><img src="/images/pdf.png" style="height:40px;width:35px" /></a>
+
 ### Before Austen Comes Aesop: The Children's Great Books and How to Experience Them
 * https://ignatius.com/before-austen-comes-aesop-bacap/
 
