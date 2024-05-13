@@ -11,6 +11,7 @@
 <header>
 	<div>
 		<img alt="Auxilium" src="/images/auxilium-new.png" style="width:350px" />
+		<HamburgerMenuButton />
 		<MainNav />
 	</div>
 </header>

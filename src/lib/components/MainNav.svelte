@@ -1,155 +1,91 @@
 <script>
 	import { isMenuOpen } from '../assets/js/store';
+	import MegaColumn from './MegaColumn.svelte';
+	import DropDownColumn from './DropDownColumn.svelte';
 //	import NavItems from './NavItems.svelte';
+	const navData = {
+		"wholeChild": {
+			"title": "Whole Child",
+			"columns": [
+				{"path": "/article/academic", "name": "Academic"},
+				{"path": "/article/spiritual", "name": "Spiritual"},
+				{"path": "/article/sports", "name": "Sports"},
+				{"path": "/article/culture", "name": "Culture"},
+				{"path": "/article/faith-reason", "name": "Faith & Reason"}
+			]
+		},
+		"spiritual": {
+			"title": "Spiritual",
+			"columns": [
+				{"path": "/article/biblical", "name": "Biblical"},
+				{"path": "/article/prayers", "name": "Prayers"},
+				{"path": "/article/formation", "name": "Formation"},
+				{"path": "/article/readings", "name": "Readings"},
+				{"path": "/article/ccc", "name": "Catechism"},
+				{"path": "/article/mentoring", "name": "Mentoring"}
+			]
+		},
+		"virtues": {
+			"title": "Virtues",
+			"columns": [
+				{"path": "/article/virtues", "name": "What are Virtues?"},
+				{"path": "/article/stories", "name": "Stories"},
+				{"path": "/article/life-of-saints", "name": "Life of Saints"},
+				{"path": "/article/corporal-works-of-mercy", "name": "Corporal works of mercy"},
+				{"path": "/article/mentoring", "name": "Mentoring"},
+				{"path": "/article/service-projects", "name": "Service Projects"},
+				{"path": "/article/spiritual-works-of-mercy", "name": "Spiritual works of mercy"},
+			]
+		},
+		"activities": {
+			"title": "Activities",
+			"columns": [
+				{"path": "/article/chat", "name": "Chat"},
+				{"path": "/article/field-outing", "name": "Field Outing"},
+				{"path": "/article/bible-study", "name": "Bible study"},
+				{"path": "/article/recollections", "name": "Recollections"},
+				{"path": "/article/study-weekend", "name": "Study weekend"}
+			]
+		},
+		"highSchool": {
+			"title": "High School/College",
+			"columns": [
+				{"path": "/article/reading-list", "name": "Reading lists"},
+				{"path": "/article/fiendship-clubs", "name": "Friendship clubs"},
+				{"path": "/article/movie-club", "name": "Movie club"},
+				{"path": "/article/sports-group", "name": "Sports Group"},
+				{"path": "/article/game-reviews", "name": "Game Reviews"},
+				{"path": "/article/mentoring", "name": "Mentoring"},
+				{"path": "/article/counseling", "name": "Counseling"}
+			]
+		},
+		"striving": {
+			"title": "Striving for Excellence",
+			"columns": [
+				{"path": "/article/pointers", "name": "Pointers"},
+				{"path": "/article/coaching", "name": "Coaching"},
+				{"path": "/article/health", "name": "Health"},
+				{"path": "/article/counseling", "name": "Counseling"},
+				{"path": "/article/bible-study", "name": "Bible stud"}
+			]
+		},
+		"help": {
+			"title": "Help",
+			"columns": [
+				{"path": "/about", "name": "About"},
+				{"path": "/article/ask-any-question", "name": "Ask any questions"},
+				{"path": "/article/connect-families", "name": "Connect families"},
+				{"path": "/contact", "name": "Moderators"}
+			]
+		}
+	}
 </script>
 
 <!-- Contents of this file will be used in the header and the responsive hamburger menu. -->
 <!-- svelte-ignore a11y-missing-attribute -->
 <style>	
-	.column > h6 {
-		margin: 1rem 0 1rem;
-	}
-	.navbar {
-	  overflow: hidden;
-	  font-family: Arial, Helvetica, sans-serif;
-	}
-	
-	.navbar a {
-	  float: left;
-	  font-size: 16px;
-	  color: black;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	}
-	
-	.mega {
-	  float: left;
-	  overflow: hidden;
-	}
-	
-	.mega .dropbtn {
-	  font-size: 16px; 
-	  border: none;
-	  outline: none;
-	  color: black;
-	  padding: 14px 16px;
-	  background-color: inherit;
-	  font-style: inherit;
-	  font-size: inherit;
-	  line-height: inherit;
-	  font-family: inherit;
-	  font-weight: bold;
-	  margin: 0;
-	}
-	
-	.navbar a:hover, .mega:hover .dropbtn {
-	  background-color: teal;
-	  color:white;
-	}
-	
-	.mega-content {
-	  display: none;
-	  position: absolute;
-	  background-color: teal;
-	  width: 100%;
-	  left: 0;
-	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	  z-index: 1;
-	}
-	
-	.mega-content .header {
-	  background: teal;
-	  padding: 10px;
-	  color: white;
-	}
-	
-	.mega:hover .mega-content {
-	  display: block;
-	}
-	
-	/* Create three equal columns that floats next to each other */
-	.column {
-	  float: left;
-	  width: 25%;
-	  padding: 5px;
-	  background-color: #ccc;
-	  height: 440px;
-	}
-	
-	.column a {
-	  float: none;
-	  color: black;
-	  padding: 8px;
-	  text-decoration: none;
-	  display: block;
-	  text-align: left;
-	}
-	
-	.column a:hover {
-	  background-color: #39b8b4;
-	}
-
-	.dropdown {
-	  float: left;
-	  overflow: hidden;
-	}
-
-	.dropdown .dropbtn {
-	border: none;
-	outline: none;
-	color: black;
-	padding: 14px 16px;
-	background-color: inherit;
-	font-family: inherit;
-	margin: 0;
-	height:55px;
-	}
-
-	a {
-		height:55px;
-	}
-.dropdown:hover .dropbtn {
-  background-color: teal;
-  color:white;
-}
-.dropdown-content .header {
-	  background: teal;
-	  padding: 10px;
-	  color: white;
-	}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ccc;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #30c3c6;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Clear floats after the columns */
+@import './main-nav.css';
 </style>
-
-
-
 <nav class="main-nav" class:open={$isMenuOpen}>
 	<div class="navbar">
 		<div class="dropdown">
@@ -168,89 +104,15 @@
 			  <div class="header">
 			  </div>   
 			  <div class="row">
-				<div class="column">
-				  <h6>Whole Child</h6>
-				  <a href="/article/academic">Academic</a>
-				  <a href="/article/spiritual">Spiritual</a>
-				  <a href="/article/sports">Sports</a>
-				  <a href="/article/culture">Culture</a>
-				  <a href="/article/faith-reason">Faith & Reason</a>
-				</div>
-				<div class="column">
-				  <h6>Spiritual</h6>
-				  <a href="/article/biblical">Biblical</a>
-				  <a href="/article/prayers">Prayers</a>
-				  <a href="/article/formation">Formation</a>
-				  <a href="/article/readings">Readings</a>
-				  <a href="/article/ccc">Catechism</a>
-				  <a href="/article/mentoring">Mentoring</a>
-				</div>
-				<div class="column">
-				  <h6>Virtues</h6>
-				  <a href="/article/virtues">What are Virtues?</a>
-				  <a href="/article/stories">Stories</a>
-				  <a href="/article/life-of-saints">Life of Saints</a>
-			 	<a href="/article/corporal-works-of-mercy">Corporal works of mercy</a>
-				<a href="/article/mentoring">Mentoring</a>
-				<a href="/article/service-projects">Service Projects</a>
-				<a href="/article/spiritual-works-of-mercy">Spiritual works of mercy</a>
-				</div>
-				<div class="column">
-					<h6>Activities</h6>
-					  <a href="/article/chat">Chat</a>
-					  <a href="/article/field-outing">Field Outing</a>
-					  <a href="/article/bible-study">Bible Study</a>
-					  <a href="/article/recollections">Recollections</a>
-					  <a href="/article/study-weekend">Study weekend</a>
-				  </div>
+				<MegaColumn columnInfo={navData.wholeChild} />
+				<MegaColumn columnInfo={navData.spiritual} />
+				<MegaColumn columnInfo={navData.virtues} />
+				<MegaColumn columnInfo={navData.activities} />
 				</div>
 			</div>
 		</div>
-		<div class="dropdown">
-			<button class="dropbtn">High School/College 
-			  <i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-content">
-				<div class="header">
-				</div>   
-				<a href="/article/reading-list">Reading lists</a>
-				<a href="/article/fiendship-clubs">Friendship clubs</a>
-				<a href="/article/movie-club">Movie club</a>
-				<a href="/article/sports-group">Sports Group</a>
-				<a href="/article/game-reviews">Game Reviews</a>
-				<a href="/article/mentoring">Mentoring</a>
-				<a href="/article/counseling">Counseling</a>
-			</div>
-		</div> 
-		<div class="dropdown">
-		  <button class="dropbtn">Striving for Excellence
-			</button>
-			<div class="dropdown-content">
-				<div class="header">
-				</div>   
-				<a href="/article/pointers">Pointers</a>
-				<a href="/article/coaching">Coaching</a>
-				<a href="/article/health">Health</a>
-				<a href="/article/counseling">Counseling</a>
-				<a href="/article/bible-study">Bible Study</a>
-			</div>
-		</div> 
-		<div class="dropdown"> 
-			<button class="dropbtn">Help
-			</button>
-			<div class="dropdown-content">
-				<div class="header">
-				</div>   
-				<a href="/about">About</a>
-				<a href="/article/ask-any-question">Ask any questions</a>
-				<a href="/article/connect-families">Connect Familes</a>
-				<a href="/contact">Moderators</a>
-			</div>
-		</div> 
+		<DropDownColumn columnInfo={navData.highSchool} />
+		<DropDownColumn columnInfo={navData.striving} />
+		<DropDownColumn columnInfo={navData.help} />
 	  </div>
-
-
-
-
-<!-- <NavItems /> -->	
 </nav>

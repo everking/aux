@@ -2,7 +2,7 @@
 <script>
 	export let data;
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
+	const { title, showHeaderTitle = true, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
 		data.meta;
 
 	const show = title !== undefined;
@@ -37,9 +37,8 @@
 		height={coverHeight}
 	/>
 
-	{#if show}
+	{#if showHeaderTitle}
 	<h1 class:show>{title}</h1>
-	{/if}
 
 	<div class="meta">
 		<b>Published:</b>
@@ -48,6 +47,7 @@
 		<b>Updated:</b>
 		{updated}
 	</div>
+	{/if}
 
 	<svelte:component this={PostContent} />
 

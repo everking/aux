@@ -6,6 +6,20 @@
 	max-width: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Avenir+Next:wght@300;400;800&display=swap');
+
+body {
+		font-family: 'Avenir Next', sans-serif;
+}
+
+h1 {
+		font-weight: 800;
+}
+
+p {
+		font-weight: 300;
+}
+
 main {
 	width: 100%;
 	max-width: 42rem;

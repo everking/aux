@@ -31,6 +31,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"nodemailer": "^6.9.13",
+		"nodemailer-smtp-transport": "^2.7.4",
 		"pdfjs-dist": "^4.1.392"
 	}
 }

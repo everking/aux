@@ -1,7 +1,6 @@
 ---
-#title: "Academic"
-date: "2023-10-26"
-updated: "2023-10-26"
+title: "Academic"
+showHeaderTitle: false
 categories:
   - "whole-child"
   - "family"
