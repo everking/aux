@@ -7,9 +7,13 @@ const emailUser = process.env.SMTP_EMAIL_USER;
 const emailPassword = process.env.SMTP_EMAIL_PASSWORD;
 const contactEmails = process.env.SMTP_CONTACT_EMAILS;
 const fromEmailAddress = '"Auxilium Admins" <admins@auxilium.guide>';
+const smtpHost = "smtp.gmail.com";
+const contactEmails = process.env.SMTP_CONTACT_EMAILS;
+const fromEmailAddress = '"Auxilium Admins" <admins@auxilium.guide>';
 cosnt smtpHost = "smtp.gmail.com";
 
 const emailSettings = {
+  host: smtpHost,
   host: smtpHost,
   port: 465,
   secure: true,
