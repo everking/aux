@@ -5,9 +5,12 @@ import smtpTransport from 'nodemailer-smtp-transport';
 export const prerender = false;
 const emailUser = process.env.SMTP_EMAIL_USER;
 const emailPassword = process.env.SMTP_EMAIL_PASSWORD;
+const contactEmails = process.env.SMTP_CONTACT_EMAILS;
+const fromEmailAddress = '"Auxilium Admins" <admins@auxilium.guide>';
+cosnt smtpHost = "smtp.gmail.com";
 
 const emailSettings = {
-  host: 'smtp.gmail.com',
+  host: smtpHost,
   port: 465,
   secure: true,
   auth: {
@@ -22,8 +25,8 @@ const sendEmail = async (emailSubject, emailBody) => {
   const result = {};
   try {
     const emailResult = await transporter.sendMail({
-      from: 'eric.esthetix@gmail.com', // Replace with your Gmail address
-      to: 'eric.deguzman@outlook.com', // Replace with the recipient's email address
+      from: fromEmailAddress,
+      to: contactEmails,
       subject: emailSubject,
       text: emailBody,
     });

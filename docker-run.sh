@@ -20,13 +20,20 @@ then
   exit 1
 fi
 
+if [ -z "${SMTP_CONTACT_EMAILS}" ]
+then
+  echo "SMTP_CONTACT_EMAILS variable required. This is for receipients of contact us."
+  exit 1
+fi
+
+
 
 docker run -d --name aux \
   -e SMTP_EMAIL_PASSWORD=${SMTP_EMAIL_PASSWORD} \
   -e SMTP_EMAIL_USER=${SMTP_EMAIL_USER} \
   -it -p 5173:5173 \
   -v $HOME/dev/aux-posts:/app/src/lib/posts \
-  ${IMAGE} bash
+  ${IMAGE}
 
 docker logs -f aux
 
