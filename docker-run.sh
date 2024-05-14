@@ -29,9 +29,9 @@ fi
 
 
 docker run -d --name aux \
-  -e SMTP_EMAIL_PASSWORD=${SMTP_EMAIL_PASSWORD} \
-  -e SMTP_EMAIL_USER=${SMTP_EMAIL_USER} \
-  -e SMTP_CONTACT_EMAILS=${SMTP_CONTACT_EMAILS} \
+  -e SMTP_EMAIL_PASSWORD="${SMTP_EMAIL_PASSWORD}" \
+  -e SMTP_EMAIL_USER="${SMTP_EMAIL_USER}" \
+  -e SMTP_CONTACT_EMAILS="${SMTP_CONTACT_EMAILS}" \
   -it -p 5173:5173 \
   -v $HOME/dev/aux-posts:/app/src/lib/posts \
   ${IMAGE}
