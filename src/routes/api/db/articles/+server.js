@@ -34,11 +34,12 @@ export const GET = async () => {
 }
 
 export const POST = async ({ params, request }) => {
-  console.log(`body: ${JSON.stringify(req.body, null, 2)}`);
-  console.log(`article: ${JSON.stringify(article, null, 2)}`);
-  try {
+  const articleObject = await request.json();
+  console.log(`articleObject: ${JSON.stringify(articleObject, null, 2)}`)
+  const article = new Article(articleObject);
+ try {
     await article.save();
-    res.status(201).json(article);
+    return json(Object.keys(article).length)
   } catch (error) {
     console.log(error);
     res.status(400).json({ message: 'Error saving article' });
