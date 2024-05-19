@@ -1,5 +1,4 @@
 use aux;
-console.log(`DB_NAME: ${DB_NAME}`);
 
 db.createCollection('articles', {
   validator: {
@@ -55,4 +54,4 @@ db.createCollection('articles', {
   }
 });
 
-db.articles.createIndex({ title: "text", body: "text", articleId: "text" }, { default_language: "en" });
+db.articles.createIndex({  articleId: "text", title: "text", body: "text" }, { default_language: "en" });

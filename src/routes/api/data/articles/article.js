@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 
 // Define Article schema
 const articleSchema = new mongoose.Schema({
+  articleId: String,
   title: String,
   date: String,
   updated: String,
