@@ -5,8 +5,12 @@ db.createCollection('articles', {
   validator: {
     $jsonSchema: {
       bsonType: "object",
-      required: ["title", "body"],
+      required: ["articleId", "title", "body"],
       properties: {
+        articleId: {
+          bsonType: "string",
+          description: "must be a string and is required"
+        },
         title: {
           bsonType: "string",
           description: "must be a string and is required"
@@ -51,4 +55,4 @@ db.createCollection('articles', {
   }
 });
 
-db.articles.createIndex({ title: "text", body: "text" }, { default_language: "en" });
+db.articles.createIndex({ title: "text", body: "text", articleId: "text" }, { default_language: "en" });

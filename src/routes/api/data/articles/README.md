@@ -1,11 +1,18 @@
 # Articles
 
-"_id": {"$oid": "6649578d800b814c64d4d160"},
-
 ```
-curl -i \   
+curl -i \
   -H "Content-Type: application/json" \
   -X POST \
-  -d '{"title": "Friendship Clubs2", "date": "2023-10-26", "updated": "2023-10-26", "categories": ["general", "family"], "coverImage": "/images/zacchaeus.png", "coverWidth": 16, "coverHeight": 6, "excerpt": "Friendship Clubs", "body": "The quick brown fox jumps over the lazy dog."}' \
-  http://localhost:5173/api/db/articles
+  -d '{"title": "Friendship Clubs", "articleId": "one-direction", "date": "2023-10-26", "updated": "2023-10-26", "categories": ["general", "family"], "coverImage": "/images/zacchaeus.png", "coverWidth": 16, "coverHeight": 6, "excerpt": "Friendship Clubs", "body": "The quick brown fox jumps over the lazy dog."}' \
+  https://auxilium.guide/api/data/articles
 ```
+
+```
+curl -i \
+  -H "Content-Type: application/json" \
+  -X PUT \ 
+  -d '{"articleId": "one-direction", "title": "Friendship Clubs2345", "date": "2023-10-26", "updated": "2023-10-26", "categories": ["general", "family"], "coverImage": "/images/zacchaeus.png", "coverWidth": 16, "coverHeight": 6, "excerpt": "Friendship Clubs", "body": "The quick brown fox jumps over the lazy dog."}' \
+  https://auxilium.guide:5173/api/data/articles/664a108e2a9346cbeb6edfff
+```
+
