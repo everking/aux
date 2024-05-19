@@ -15,7 +15,6 @@ export const GET = async ({ params }) => {
 
   console.log(`GET ${id}`);
   try {
-    console.log(`test id: ${regex.test(id)}`);
     const article = isId(id) ? 
       await Article.findById(id) : 
       await Article.findOne({articleId: id});
