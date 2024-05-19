@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit'
 import mongoose from 'mongoose';
-import { Article, connect } from '../article';
+import { Article, connect } from './article';
 
 export const prerender = false;
 connect(mongoose);
