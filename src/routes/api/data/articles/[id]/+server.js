@@ -10,11 +10,28 @@ const isId = (id) => {
   return regex.test(id);
 }
 
-export const GET = async ({ params }) => {
+export const GET = async ({ params, request, url }) => {
   const { id } = params;
 
   console.log(`GET ${id}`);
   try {
+
+    if (id === "search") {
+      const options = {
+        score: { $meta: "textScore" },
+        sort: { score: { $meta: "textScore" } }
+      };
+      const queryParams = url.searchParams;
+      console.log(`url: ${JSON.stringify(url, null, 2)}`);
+      console.log(`params: ${JSON.stringify(params, null, 2)}`);
+      console.log(`request: ${JSON.stringify(request, null, 2)}`)
+      const query = queryParams.get('q');
+    
+      const articles = await Article.find({ $text: { $search: query } }, null, options);
+      return json(articles);
+    }
+
+
     const article = isId(id) ? 
       await Article.findById(id) : 
       await Article.findOne({articleId: id});
