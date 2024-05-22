@@ -15,11 +15,13 @@ db.createCollection('articles', {
           description: "must be a string and is required"
         },
         date: {
-          bsonType: "string",
+          bsonType: "date",
+          default: Date.now(),
           description: "must be a string and is optional"
         },
         updated: {
-          bsonType: "string",
+          bsonType: "date",
+          default: Date.now(),
           description: "must be a string and is optional"
         },
         categories: {
