@@ -22,7 +22,12 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+      strict: false,
+      pages: 'build',
+      assets: 'build',
+      fallback: null
+    }),
     prerender: {
       entries: [
         '*',
