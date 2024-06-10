@@ -17,12 +17,12 @@
 		"spiritual": {
 			"title": "Spiritual",
 			"columns": [
-				{"path": "/article/biblical", "name": "Biblical"},
 				{"path": "/article/prayers", "name": "Prayers"},
 				{"path": "/article/formation", "name": "Formation"},
 				{"path": "/article/readings", "name": "Readings"},
 				{"path": "/article/ccc", "name": "Catechism"},
-				{"path": "/article/mentoring", "name": "Mentoring"}
+				{"path": "/article/mentoring", "name": "Mentoring"},
+				{"path": "/article/biblical", "name": "Biblical"}
 			]
 		},
 		"virtues": {
@@ -32,9 +32,9 @@
 				{"path": "/article/stories", "name": "Stories"},
 				{"path": "/article/life-of-saints", "name": "Life of Saints"},
 				{"path": "/article/corporal-works-of-mercy", "name": "Corporal works of mercy"},
-				{"path": "/article/mentoring", "name": "Mentoring"},
+				{"path": "/article/coaching", "name": "Coaching"},
 				{"path": "/article/service-projects", "name": "Service Projects"},
-				{"path": "/article/spiritual-works-of-mercy", "name": "Spiritual works of mercy"},
+				{"path": "/article/spiritual-works-of-mercy", "name": "Spiritual works of mercy"}
 			]
 		},
 		"activities": {
@@ -51,22 +51,22 @@
 			"title": "High School/College",
 			"columns": [
 				{"path": "/article/reading-list", "name": "Reading lists"},
-				{"path": "/article/fiendship-clubs", "name": "Friendship clubs"},
-				{"path": "/article/movie-club", "name": "Movie club"},
-				{"path": "/article/sports-group", "name": "Sports Group"},
+				{"path": "/article/movie-club", "name": "Movie Reviews"},
+				{"path": "/article/apologetics", "name": "Apologetics"},
 				{"path": "/article/game-reviews", "name": "Game Reviews"},
-				{"path": "/article/mentoring", "name": "Mentoring"},
+				{"path": "/article/beatitudes", "name": "Living the Beatitudes"},
 				{"path": "/article/counseling", "name": "Counseling"}
 			]
 		},
 		"striving": {
 			"title": "Striving for Excellence",
 			"columns": [
-				{"path": "/article/pointers", "name": "Pointers"},
-				{"path": "/article/coaching", "name": "Coaching"},
+				{"path": "/article/finding-purpose", "name": "Finding Purpose"},
+				{"path": "/article/doing-work-well", "name": "Doing Work Well"},
 				{"path": "/article/health", "name": "Health"},
-				{"path": "/article/counseling", "name": "Counseling"},
-				{"path": "/article/bible-study", "name": "Bible stud"}
+				{"path": "/article/being-fruitful", "name": "Being Fruitful"},
+				{"path": "/article/spiritual-reading", "name": "Spiritual Reading"},
+				{"path": "/article/apostolate", "name": "Apostolate"}
 			]
 		},
 		"help": {

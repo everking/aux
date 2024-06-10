@@ -3,12 +3,14 @@
 	export let data;
 
 	const { title, showHeaderTitle = true, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
-		data.meta;
+		data;
 
 	const show = title !== undefined;
 
+	console.log( JSON.stringify(data, null, 2) );
+
 	console.log(show);
-	const { PostContent } = data;
+	const { body } = data;
 </script>
 
 <svelte:head>
@@ -40,16 +42,9 @@
 	{#if showHeaderTitle}
 	<h1 class:show>{title}</h1>
 
-	<div class="meta">
-		<b>Published:</b>
-		{date}
-		<br />
-		<b>Updated:</b>
-		{updated}
-	</div>
 	{/if}
 
-	<svelte:component this={PostContent} />
+	{@html body}
 
 	{#if categories}
 		<aside class="post-footer">
